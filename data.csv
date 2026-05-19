@@ -1,0 +1,14 @@
+Type,City,Transportation,Card Fare,Cash Fare,Notes
+fares,Iksan,City Bus,1650 KRW,1700 KRW,
+fares,Jeonju,City Bus,1500 KRW,1600 KRW,
+fares,Seoul,City Bus,1500 KRW,1600 KRW,
+fares,Busan,City Bus,1550 KRW,1700 KRW,
+fares,Daegu,City Bus,1500 KRW,1600 KRW,
+fares,Incheon,City Bus,1500 KRW,1600 KRW,
+fares,Gwangju,City Bus,1450 KRW,1550 KRW,
+fares,Daejeon,City Bus,1500 KRW,1600 KRW,
+Type,Method,Time Limit,Conditions,Exceptions,Benefit
+transfer,Bus to Bus,30 minutes,Must tap card when getting off,Cannot transfer to the same bus number,Free or discounted fare
+transfer,Bus to Subway,30 minutes,Must tap card when getting off,Valid for up to 4 transfers (5 rides total),Free or discounted fare
+transfer,Subway to Subway,N/A,Transfers happen inside the station without tapping out,Once you tap out you cannot re-enter for free,Free
+transfer,Late Night,60 minutes,Applies between 21:00 and 07:00 next day,Same rules as daytime transfers apply,Extended transfer time

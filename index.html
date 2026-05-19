@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Korea Transit Guide for International Students</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-mode">
+
+    <!-- Controls -->
+    <div class="controls">
+        <button id="theme-toggle" class="control-btn">🌙 Dark</button>
+        <button id="lang-ko" class="control-btn">🇰🇷 한국어</button>
+        <button id="lang-en" class="control-btn">🇺🇸 English</button>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1 data-en="Navigate Korea with Ease" data-ko="한국 대중교통 쉽게 이용하기">Navigate Korea with Ease</h1>
+            <p data-en="Your ultimate guide to using Kakao transit apps. Master the buses, taxis, and subways like a local." data-ko="카카오 대중교통 앱 사용 가이드. 현지인처럼 버스, 택시, 지하철을 마스터하세요.">Your ultimate guide to using Kakao transit apps. Master the buses, taxis, and subways like a local.</p>
+        </div>
+        <div class="background-decor"></div>
+    </header>
+
+    <!-- App Selection Menu -->
+    <main class="container">
+        <section class="app-selection">
+            <h2 class="section-title" data-en="Select an App to Learn" data-ko="학습할 앱을 선택하세요">Select an App to Learn</h2>
+            <div class="cards">
+                <div class="card" data-app="kakao-t">
+                    <div class="card-icon"><img src="image/T.png" alt="Kakao T Icon" class="app-icon"></div>
+                    <h3 data-en="Kakao T" data-ko="카카오 T">Kakao T</h3>
+                    <p data-en="Learn to call a taxi, select routes, and pay easily." data-ko="택시 호출, 경로 선택 및 간편 결제 방법을 배웁니다.">Learn to call a taxi, select routes, and pay easily.</p>
+                </div>
+                <div class="card" data-app="kakao-bus">
+                    <div class="card-icon"><img src="image/BUS.jpg" alt="Kakao Bus Icon" class="app-icon"></div>
+                    <h3 data-en="Kakao Bus" data-ko="카카오 버스">Kakao Bus</h3>
+                    <p data-en="Find bus stops, real-time arrivals, and routes." data-ko="버스 정류장, 실시간 도착 정보 및 노선을 확인합니다.">Find bus stops, real-time arrivals, and routes.</p>
+                </div>
+                <div class="card" data-app="kakao-map">
+                    <div class="card-icon"><img src="image/map.png" alt="Kakao Map Icon" class="app-icon"></div>
+                    <h3 data-en="Kakao Map" data-ko="카카오 맵">Kakao Map</h3>
+                    <p data-en="Get full public transit routes from A to B." data-ko="출발지에서 목적지까지의 전체 대중교통 경로를 확인합니다.">Get full public transit routes from A to B.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Detailed Content Section -->
+        <section id="detail-section" class="details hidden">
+            <button id="back-btn" class="back-btn" data-en="← Back to Menu" data-ko="← 메뉴로 돌아가기">← Back to Menu</button>
+            <div id="content-container" class="content-container">
+                <!-- Content will be injected here via JavaScript -->
+            </div>
+        </section>
+
+        <!-- Essential Data Section (CSV Table) -->
+        <section class="essential-data">
+            <h2 class="section-title" data-en="Essential Transit Info" data-ko="필수 대중교통 정보">Essential Transit Info</h2>
+            <div class="tab-buttons">
+                <button class="tab-btn active" data-tab="fares" data-en="Transit Fares" data-ko="대중교통 요금">Transit Fares</button>
+                <button class="tab-btn" data-tab="transfer" data-en="Transfer Guide" data-ko="환승 가이드">Transfer Guide</button>
+            </div>
+            
+            <div id="csv-table-container" class="table-container">
+                <p class="loading" data-en="Loading data..." data-ko="데이터 불러오는 중...">Loading data...</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p data-en="&copy; 2026 Korea Transit Guide. Built for International Students." data-ko="&copy; 2026 한국 대중교통 가이드. 유학생을 위해 제작되었습니다.">&copy; 2026 Korea Transit Guide. Built for International Students.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
